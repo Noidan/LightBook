@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightBook.Mvc", "LightBook\LightBook.Mvc.csproj", "{095C1BCD-4AAA-4433-AD12-F8D5128408FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightBook.Domain", "LightBook.Domain\LightBook.Domain.csproj", "{E7C25EB0-ADF8-48A1-9A61-225D93186B4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{095C1BCD-4AAA-4433-AD12-F8D5128408FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{095C1BCD-4AAA-4433-AD12-F8D5128408FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{095C1BCD-4AAA-4433-AD12-F8D5128408FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{095C1BCD-4AAA-4433-AD12-F8D5128408FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7C25EB0-ADF8-48A1-9A61-225D93186B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C25EB0-ADF8-48A1-9A61-225D93186B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C25EB0-ADF8-48A1-9A61-225D93186B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C25EB0-ADF8-48A1-9A61-225D93186B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA951C7C-943B-4AB5-9C5F-16E760459C7D}
+	EndGlobalSection
+EndGlobal
