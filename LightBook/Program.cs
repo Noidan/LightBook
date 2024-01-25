@@ -1,14 +1,19 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using LightBook.Domain;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
-//builder.Services.AddControllersWithViews();
+//builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+builder.Services.AddControllersWithViews();
 
 var connectionString = builder.Configuration.GetConnectionString("Default");
 builder.Services.AddDbContext<LightBookContext>(opt => opt.UseSqlServer(connectionString));
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options => options.LoginPath = "/account");
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
