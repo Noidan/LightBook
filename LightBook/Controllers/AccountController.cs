@@ -11,7 +11,7 @@ namespace LightBook.Mvc.Controllers
 {
     public class AccountController : BookBaseController
     {
-        public LightBookContext _context;
+        private readonly LightBookContext _context;
 
         public AccountController(LightBookContext context)
         {
